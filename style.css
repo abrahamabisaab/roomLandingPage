@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.hero__section{
+    background: url("./images/desktop-image-hero-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45vh;
+    position: relative;
+}
+
+.navigation{
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 2em;
+    display: flex;
+}
+
+.nav__list{
+    display: none;
+    z-index: 999;
+}
+
+.nav__links{
+    list-style: none;
+    margin-right: 1em;
+    justify-content: center;
+    align-self: center;
+}
+
+.nav__links:nth-child(4){
+    margin-right: 20em;
+}
+
+.logo{
+    cursor: pointer;
+    margin: auto;
+}
+
+.hamburger__closed{
+    display: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+.hamburger{
+    cursor: pointer;
+}
+
+.responsive{
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    font-size: .8em;
+    height: 20%;
+    padding: 0;
+    opacity: .8;
+
+}
+
+.main__title__2, .main__paragraph__2,.main__title__3,.main__paragraph__3{
+    display: none;
+}
+
+.arrows{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.arrow__angle{
+    background-color: black;
+    cursor: pointer;
+    padding: 1em 1.5em;
+    float: left;
+}
+
+.main__section{
+    margin: 4em auto;
+    width: 75%;
+}
+
+.main__title,.main__title__2,.main__title__3{
+    font-size: 1.6em;
+    line-height: 1;
+    margin-bottom: .5em;
+    font-weight: 700;
+}
+.main__paragraph,.main__paragraph__2,.main__paragraph__3{
+    font-weight: 500;
+    color:  hsl(0, 0%, 63%);
+    font-size: .8em;
+    line-height: 1.5;
+    margin-bottom: 4em;
+}
+
+.shop__now{
+    color: black;
+    cursor: pointer;
+}
+
+span{
+    letter-spacing: .7em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8em;
+    margin-right: 2em;
+}
+
+.furniture__section{
+    margin: 4em auto;
+    width: 75%;
+}
+
+.dark,.light{
+    width: 100%;
+}
+
+.furniture__title{
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .3em;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.furniture__paragraph{
+    font-weight: 500;
+    color:  hsl(0, 0%, 63%);
+    font-size: .8em;
+    line-height: 1.5;
+    margin-bottom: 4em;
+
+}
+
+a,a:link,a:focus{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+a:hover, a:focus{
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+    line-height: 1.5em;
+}
+
+.shop__now:hover, .shop__now:focus{
+    color: hsl(0, 0%, 63%);
+}
+
+.arrow__angle:hover,.arrow__angle:focus{
+    background-color: hsl(0, 0%, 27%);
+}
+@media screen and (min-width:768px){
+    .hamburger{
+        display: none;
+    }
+
+    .nav__list{
+        display: flex;
+    }
+    
+    .logo{
+        margin: auto 3em auto 0;
+    }
+    .top__section{
+        display: flex;
+        position: relative;
+        height: 60%;
+    }
+
+    .hero__section{
+        position: static;
+        width:57%;
+        height: auto;
+        background-size: auto;
+    }
+
+    .main__section{
+        width: 33%;
+        margin: 4em auto 7em auto;
+}  
+    .arrows{
+        position: absolute;
+        bottom: 0;
+        left: 57%;
+    }
+
+    .bottom__section{
+        display: flex;
+        height: 20%;
+    }
+
+    .dark, .light{
+        width: 20%;
+    }
+    
+    .furniture__section{
+        margin: 4em 4em 0 4em;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1100px){
+        
+    .main__title,.main__title__2,.main__title__3{
+        font-size: 1.8em;
+        margin-bottom: .7em;
+    }
+
+    span{
+        font-size: 1em;
+    }
+
+    .furniture__title{
+        font-size: 1em;
+        margin-bottom: .6em;
+    }
+
+
+}
